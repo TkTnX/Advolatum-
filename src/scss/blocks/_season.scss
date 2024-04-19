@@ -5,6 +5,12 @@
 
 .season__title {
   margin-bottom: 28px;
+  &::before {
+    @include titleBg {
+      content: "на этот сезон";
+      top: -50px;
+    }
+  }
 }
 
 .season__slider {
@@ -12,12 +18,13 @@
   justify-content: center;
 }
 
-.swiper-slide {
-}
-
 .swiper__link {
   display: flex;
   justify-content: center;
+
+  @include bigPhone {
+    height: 200px;
+  }
 }
 
 .swiper__arrow-link {
@@ -26,6 +33,16 @@
   bottom: 33px;
 
   left: 165px;
+
+  @include bigLaptop {
+    left: 100px;
+  }
+  @include tablet {
+    left: 10px;
+  }
+  @include tablet {
+    display: none;
+  }
 }
 .swiper__slide-text {
   position: absolute;
@@ -33,9 +50,29 @@
   bottom: 162px;
   max-width: 300px;
   text-align: center;
+  @include bigLaptop {
+    bottom: 50px;
+    right: 50px;
+  }
+  @include tablet {
+    right: 0;
+    bottom: 10px;
+  }
+  @include smallTablet {
+    bottom: -100px;
+  }
+  @include tablet {
+    left: 0;
+    p {
+      display: none;
+    }
+  }
 }
 
 .swiper__slide-btn {
   display: inline-block;
   margin-top: 20px;
+  @include tablet {
+    margin-bottom: 120px;
+  }
 }

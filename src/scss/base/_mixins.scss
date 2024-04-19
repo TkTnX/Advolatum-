@@ -1,3 +1,33 @@
+@mixin bigLaptop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin smallLaptop {
+  @media (max-width: 898px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin smallTablet {
+  @media (max-width: 655px) {
+    @content;
+  }
+}
+
+@mixin bigPhone {
+  @media (max-width: 425px) {
+      @content;
+  }
+}
+
 @mixin logoMixin {
   position: relative;
   @content;
@@ -20,7 +50,7 @@
   font-family: var(--font-second);
 
   font-weight: 700;
-  font-size: 140px;
+  font-size: clamp(3.75rem, 1.932rem + 9.09vw, 8.75rem);
   line-height: 1.14286;
   text-transform: uppercase;
   color: #1f252d;

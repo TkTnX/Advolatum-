@@ -10,6 +10,28 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
+          <button class="mobileBtn">
+            <span></span><span></span><span></span>
+          </button>
+          <nav class="mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="#!">Главная</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">коллекции</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">О нас</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">контакты</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">корзина</a>
+              </li>
+            </ul>
+          </nav>
           <nav class="header__nav">
             <a href="/" class="logo">
               <img src="/images/icons/logo.svg" alt="Logo" />
@@ -154,9 +176,16 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="actual">
+        <div class="container">
+          <h2 class="actual__title title-2">Актуальное</h2>
+
+          <ul class="actual__list" id="actuallist"></ul>
         </div>
       </section>
     </main>

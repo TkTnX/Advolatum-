@@ -6,6 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include smallLaptop {
+    justify-content: center;
+  }
+  @include smallTablet {
+    justify-content: space-between;
+  }
 }
 .logo {
   margin-top: -15px;
@@ -15,17 +21,27 @@
 .header__nav {
   display: flex;
   gap: 30px;
+  @include smallTablet {
+    display: none;
+  }
 }
 .header__list {
   display: flex;
   align-items: center;
   gap: 46px;
+
+  @include tablet {
+    gap: 20px;
+  }
 }
 .header__item {
   line-height: 0.6;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.1s ease-in;
+  @include smallLaptop {
+    font-size: 18px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -48,10 +64,22 @@
   &:hover {
     opacity: 0.8;
   }
+  @include smallLaptop {
+    display: none;
+  }
+  @include smallTablet {
+    display: flex;
+  }
 }
 .header__subnav {
   margin-top: 40px;
   margin-left: 135px;
+  @include smallLaptop {
+    margin-left: 0;
+  }
+  @include smallTablet {
+    display: none;
+  }
 }
 
 .header__subnav-list {
@@ -59,4 +87,7 @@
   align-items: center;
   gap: 70px;
   font-size: 15px;
+  @include smallLaptop {
+    justify-content: center;
+  }
 }
