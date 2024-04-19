@@ -1,0 +1,83 @@
+:root {
+  --color-bg: #0d131a;
+  --color-text: #fff;
+  --color-accent: #d1c12b;
+
+  --font-size: 20px;
+  --font-weight: 400;
+
+  --font-main: "Uindbase Font 1", sans-serif;
+  --font-accent: "Rosario", sans-serif;
+  --font-second: "Usually-font", sans-serif;
+
+  --container-width: 1568px;
+  --container-padding: 15px;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.catalogBtn {
+  margin-top: 163px;
+  padding: 15px 40px 15px 80px;
+  font-family: var(--font-accent);
+  font-weight: 500;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 50px;
+  max-width: 205px;
+  margin-left: auto;
+  position: relative;
+  transition: all 0.1s ease-in;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/images/hero/btn.svg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    border-color: #797020;
+    scale: 1.1;
+  }
+  &:active {
+    scale: 0.9;
+    transform: translateY(-5px);
+  }
+}
+
+.title-2 {
+  font-size: clamp(2.813rem, 1.563rem + 6.25vw, 6.25rem);
+  text-transform: uppercase;
+  position: relative;
+  &::before {
+    @include titleBg {
+      content: "на этот сезон";
+      top: -50px;
+    }
+  }
+}
+
+

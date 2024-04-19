@@ -1,0 +1,46 @@
+.hero {
+  margin-top: 135px;
+}
+
+.hero__col {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-family: var(--font-second);
+  font-size: clamp(3.125rem, 1.307rem + 9.09vw, 8.125rem);
+  position: relative;
+
+  &::before {
+    content: "Одежда для каждого";
+    position: absolute;
+    font-weight: 700;
+    font-size: clamp(4.375rem, 2.102rem + 11.36vw, 10.625rem);
+    text-transform: uppercase;
+    text-align: center;
+    color: #1f252d;
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "Одежда для  каждого";
+    top: 0;
+    position: absolute;
+    color: #a332ca;
+    z-index: -1;
+    left: 50%;
+    font-size: clamp(2.5rem, 0.682rem + 9.09vw, 7.5rem);
+    transform: translateX(-50%);
+    filter: blur(4px);
+  }
+}
+.hero__subtitle {
+  margin-top: 35px;
+  font-size: 25px;
+}
+

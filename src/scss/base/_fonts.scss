@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Rosario:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+
+@font-face {
+  font-family: "Uindbase Font 1";
+  src: url("./../fonts/UF1/uindbase_font_1.eot"); /* IE 9 Compatibility Mode */
+  src: url("./../fonts/UF1/uindbase_font_1.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("./../fonts/UF1/uindbase_font_1.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./../fonts/UF1/uindbase_font_1.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./../fonts/UF1/uindbase_font_1.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./../fonts/UF1/uindbase_font_1.svg#uindbase_font_1") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: "Usually-font";
+  src: url("./../fonts/usually/usually-font.eot"); /* IE 9 Compatibility Mode */
+  src: url("./../fonts/usually/usually-font.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("./../fonts/usually/usually-font.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./../fonts/usually/usually-font.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./../fonts/usually/usually-font.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./../fonts/usually/usually-font.svg#usually-font") format("svg"); /* Chrome < 4, Legacy iOS */
+}

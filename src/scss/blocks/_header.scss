@@ -1,0 +1,62 @@
+.header {
+  padding-top: 43px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  margin-top: -15px;
+  @include logoMixin;
+}
+
+.header__nav {
+  display: flex;
+  gap: 30px;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.header__item {
+  line-height: 0.6;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.header__link {
+  &--active {
+    color: var(--color-accent);
+  }
+}
+
+.header__socials {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header__social {
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.header__subnav {
+  margin-top: 40px;
+  margin-left: 135px;
+}
+
+.header__subnav-list {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 15px;
+}

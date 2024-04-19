@@ -1,0 +1,41 @@
+.season {
+  margin-top: clamp(2.813rem, -3.347rem + 30.8vw, 19.75rem);
+  margin-bottom: 75px;
+}
+
+.season__title {
+  margin-bottom: 28px;
+}
+
+.season__slider {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+}
+
+.swiper__link {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper__arrow-link {
+  position: absolute;
+  z-index: 2;
+  bottom: 33px;
+
+  left: 165px;
+}
+.swiper__slide-text {
+  position: absolute;
+  right: 230px;
+  bottom: 162px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.swiper__slide-btn {
+  display: inline-block;
+  margin-top: 20px;
+}
