@@ -1,0 +1,42 @@
+.contact {
+  margin-top: 180px;
+}
+
+.contact__title {
+  &::before {
+    @include titleBg {
+      content: "Контакты";
+    }
+  }
+}
+.contact__wrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 126px;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.contact__map {
+    width: 100%;
+}
+
+.contact__list {
+  display: grid;
+  gap: 25px;
+}
+
+.contact__socials {
+    justify-self: center;
+}
+
+.footer__social {
+}
+.footer__social-link {
+}

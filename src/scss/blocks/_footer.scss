@@ -1,5 +1,5 @@
 .footer {
-  padding: 110px 0 77px;
+  padding: clamp(3.125rem, 1.761rem + 6.82vw, 6.875rem) 0 77px;
 }
 
 .footer__wrapper {
@@ -35,7 +35,6 @@
     margin-left: 0;
   }
 
-
   p {
     display: flex;
     align-items: center;
@@ -49,11 +48,9 @@
   gap: 10px;
 }
 .footer__social {
-    transition: all 0.1s ease-in;
-    
-    &:hover {
-        opacity: 0.8;
-    }
-}
-.footer__social-link {
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
