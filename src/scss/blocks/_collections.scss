@@ -1,0 +1,77 @@
+.collections {
+  margin-top: 65px;
+}
+
+.collections__title {
+  @include titleBg {
+    content: "Коллекции";
+  }
+  @include bigPhone {
+    font-size: 44px;
+    position: static;
+    text-align: center;
+  }
+}
+
+.collections__wrapper {
+  padding-top: 140px;
+  display: flex;
+  align-items: flex-start;
+  @include bigPhone {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.collections__categories {
+  display: grid;
+  gap: 40px;
+  position: sticky;
+  top: 50px;
+  @include bigPhone {
+    position: static;
+  }
+}
+
+.collections__category {
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.collections__list {
+  margin-top: -10px;
+  @include bigLaptop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include laptop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include tablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include bigPhone {
+    margin-top: 0;
+  }
+}
+
+.collections__category--active {
+  position: relative;
+  left: 50px;
+  text-decoration: underline;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/images/icons/arrowColor.svg");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 12px;
+  }
+}

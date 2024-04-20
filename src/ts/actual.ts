@@ -1,4 +1,4 @@
-type CardData = {
+export type CardData = {
   id: number;
   title: string;
   img: string;
@@ -7,6 +7,8 @@ type CardData = {
 };
 
 export async function fetchActualList() {
+  const actuallist = document.querySelector("#actuallist");
+
   try {
     await fetch("https://3e780da8dac3e524.mokky.dev/actualList")
       .then((res) => res.json())
@@ -15,13 +17,17 @@ export async function fetchActualList() {
       });
   } catch (error) {
     console.log(error);
+    const li = document.createElement("li");
+    li.textContent =
+      "К сожалению, произошла ошибка при получении данных! Зайдите позже :)";
+    actuallist?.append(li);
   }
 }
 
 function renderData(data: CardData[]) {
-  const actuallist = document.querySelector("#actuallist");
-
   data.map((card) => {
+    const actuallist = document.querySelector("#actuallist");
+
     const li = document.createElement("li");
     li.innerHTML = `
                     <img src="/images/actual/${card.img}" alt="Картинка карточки" />
