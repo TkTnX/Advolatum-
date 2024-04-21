@@ -1,4 +1,5 @@
 import { CardData } from "./actual";
+import { getData } from "./cart";
 
 export function collections() {
   const categories = document.querySelectorAll(".collections__category");
@@ -57,12 +58,26 @@ export function collections() {
                       <h4>${card.title}</h4>
                       <div class="actual__bottom">
                         <p class="actual__card-price">${card.price} ₽</p>
-                        <button class="actual__card-btn">В корзину</button>
+                        <button id="addToCart" class="actual__card-btn">В корзину</button>
                       </div>
                     </div>
                   `;
       li.classList.add("actual__card");
       list?.append(li);
+
+      setTimeout(() => {
+        const addToCart = document.querySelectorAll("#addToCart");
+
+        let addToCartBtns = Array.from(addToCart);
+
+        addToCartBtns.map((btn, index) => {
+          btn.addEventListener("click", () => {
+            if (index + 1 === card.id) {
+              getData(card);
+            }
+          });
+        });
+      }, 500);
     });
   }
 }

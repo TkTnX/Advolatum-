@@ -1,4 +1,6 @@
 export type CardData = {
+  append(li: HTMLLIElement): unknown;
+  appendChild(li: HTMLLIElement): unknown;
   id: number;
   title: string;
   img: string;
@@ -35,7 +37,7 @@ function renderData(data: CardData[]) {
                       <h4>${card.title}</h4>
                       <div class="actual__bottom">
                         <p class="actual__card-price">${card.price} ₽</p>
-                        <button class="actual__card-btn">В корзину</button>
+                        <button id="addToCart" class="actual__card-btn">В корзину</button>
                       </div>
                     </div>
                   `;
