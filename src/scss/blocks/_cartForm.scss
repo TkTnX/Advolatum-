@@ -1,0 +1,61 @@
+.cart__form {
+  width: 423px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #1f252d;
+  }
+  @include bigPhone {
+    width: 100%;
+  }
+}
+.cart__form-title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cart__form-label {
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #3b4654;
+  display: grid;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.cart__input {
+  color: #fff;
+  width: 100%;
+
+  padding: 10px 10px 15px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #10171f;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #3b4654;
+  }
+}
+.cart__form-house {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.cart__input-house {
+  max-width: 104px;
+  &::placeholder {
+    text-align: center;
+  }
+}
+
+.cart__form-btn {
+  top: 50px;
+}

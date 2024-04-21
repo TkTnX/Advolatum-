@@ -1,0 +1,56 @@
+.cart__title {
+  margin-top: -120px;
+  @include titleBg {
+    content: "Корзина";
+  }
+}
+
+.cart {
+  margin-top: 145px;
+}
+
+.cart__wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include middleLaptop {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.cart__items-info {
+  max-width: 800px;
+}
+
+.cart__items {
+  display: grid;
+  gap: 16px;
+}
+
+.cart__order-desc {
+  margin-top: 16px;
+  max-width: 450px;
+  margin-left: auto;
+
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: right;
+  color: #3b4654;
+}
+.cart__order-info {
+  margin-top: 23px;
+  display: grid;
+  gap: 30px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 95px;
+  }
+}
+

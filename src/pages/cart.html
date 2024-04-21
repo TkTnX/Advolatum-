@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advolatum | Корзина</title>
+    <link rel="stylesheet" href="./../scss/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <button class="mobileBtn">
+            <span></span><span></span><span></span>
+          </button>
+          <nav class="mobile__nav">
+            <ul class="mobile__nav-list">
+              <li class="mobile__nav-item">
+                <a href="/">Главная</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="./collections.html">коллекции</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">О нас</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">контакты</a>
+              </li>
+              <li class="mobile__nav-item">
+                <a href="#!">корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__nav">
+            <a href="/" class="logo">
+              <img src="/images/icons/logo.svg" alt="Logo" />
+            </a>
+
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#!" class="header__link header__link--active"
+                  >Главная</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="./collections.html" class="header__link">коллекции</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">контакты</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__socials">
+            <li class="header__social">
+              <a href="#!" class="header__social-link"
+                ><img src="/images/icons/telegram.svg" alt="telegram"
+              /></a>
+            </li>
+            <li class="header__social">
+              <a href="#!" class="header__social-link"
+                ><img src="/images/icons/vk.svg" alt="vk"
+              /></a>
+            </li>
+            <li class="header__social">
+              <a href="#!" class="header__social-link"
+                ><img src="/images/icons/insta.svg" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__subnav">
+          <ul class="header__subnav-list">
+            <li class="header__item">
+              <a href="#!" class="header__link">девушкам</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">мужчинам</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" class="header__link">унисекс</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="cart">
+          <h2 class="title-2 cart__title">Корзина</h2>
+
+          <div class="cart__wrapper">
+            <div class="cart__items-info">
+              <ul class="cart__items">
+                <li class="cart__item">
+                  <img src="/images/season/slideImg.jpg" alt="Cart Img" />
+                  <div class="cart__text">
+                    <h6 class="cart__item-title">
+                      Костюм Advolatum - соцветие
+                    </h6>
+                    <div class="cart__item-info">
+                      <p>Размер: <span>M</span></p>
+                      <p>
+                        кол-во: <button>-</button><span>1</span
+                        ><button>+</button>
+                      </p>
+                      <p>стоимость: <span>3751</span> ₽</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <img src="/images/season/slideImg.jpg" alt="Cart Img" />
+                  <div class="cart__text">
+                    <h6 class="cart__item-title">
+                      Костюм Advolatum - соцветие
+                    </h6>
+                    <div class="cart__item-info">
+                      <p>Размер: <span>M</span></p>
+                      <p>
+                        кол-во: <button>-</button><span>1</span
+                        ><button>+</button>
+                      </p>
+                      <p>стоимость: <span>3751</span> ₽</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <p class="cart__order-desc">
+                СУММА доставкИ будет расчитана после ввода данных о месте
+                назначения - город, улица
+              </p>
+              <ul class="cart__order-info">
+                <li>
+                  <p>доставка:</p>
+                  <span>500₽</span>
+                </li>
+                <li>
+                  <p>итого:</p>
+                  <span>7501₽</span>
+                </li>
+              </ul>
+            </div>
+            <form class="cart__form">
+              <h5 class="cart__form-title">Оформление заказа</h5>
+              <label class="cart__form-label">
+                данные получателя
+                <input type="text" class="cart__input" placeholder="фамилия" />
+                <input type="text" class="cart__input" placeholder="имя" />
+                <input type="text" class="cart__input" placeholder="отчество" />
+              </label>
+
+              <label class="cart__form-label">
+                контактный номер телефона
+                <input
+                  type="tel"
+                  placeholder="+7 (   )   -   -"
+                  class="cart__input"
+                />
+              </label>
+
+              <label class="cart__form-label">
+                данные места доставки
+                <input type="text" placeholder="город" class="cart__input" />
+                <input type="text" placeholder="Улица" class="cart__input" />
+
+                <div class="cart__form-house">
+                  <input
+                    type="number"
+                    class="cart__input cart__input-house"
+                    placeholder="дом"
+                  />
+                  <input
+                    type="number"
+                    class="cart__input cart__input-house"
+                    placeholder="КВ/ОФИС"
+                  />
+                </div>
+              </label>
+              <a href="#!" class="catalogBtn cart__form-btn">ОФОРМИТЬ</a>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__copyright">
+            <a href="#!">политика конфиденциальности</a>
+            <a href="#!">согласие на обработку персональных данных</a>
+          </div>
+          <div class="footer__logo">
+            <img src="/images/icons/logo.svg" alt="Logo" />
+            <p>2024 <span>TTX</span></p>
+          </div>
+          <ul class="footer__socials">
+            <li class="footer__social">
+              <a href="#!" class="footer__social-link">
+                <img src="/images/icons/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li class="footer__social">
+              <a href="#!" class="footer__social-link">
+                <img src="/images/icons/vk.svg" alt="vk" />
+              </a>
+            </li>
+            <li class="footer__social">
+              <a href="#!" class="footer__social-link">
+                <img src="/images/icons/tiktok.svg" alt="tiktok" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
